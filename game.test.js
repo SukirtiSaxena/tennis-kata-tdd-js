@@ -4,6 +4,9 @@ const each = require('jest-each').default;
 describe("Tennis Kata Test Cases", () => {
     each([
         [[0, 0], 'love - All'],
+        [[1, 0], '15 - love'],
+        [[0, 1], 'love - 15'],
+        [[2, 0], '30 - love'],
         [[1, 1], '15 - All'],
         [[2, 2], '30 - All'],
         [[3, 3], '40 - All'],
@@ -17,7 +20,9 @@ describe("Tennis Kata Test Cases", () => {
         [[4, 4], 'Deuce'],
         [[5, 4], 'Player One is at Advantage'],
         [[5, 6], 'Player Two is at Advantage'],    
-        [[6, 4], 'Player One is the Winner']
+        [[6, 4], 'Player One is the Winner'],
+        [[6, 6], 'Deuce'],
+        [[9, 11], 'Player Two is the Winner']
     ]).
         test("If [Player 1 Score, Player 2 Score] is %s, give message , '%s' ", (score, expected) => {
             expect(tennis(score)).toBe(expected);
