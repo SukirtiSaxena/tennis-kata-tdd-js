@@ -18,5 +18,11 @@ describe("Tennis Kata Test Cases", () => {
     test("Player 2 is at Advantage", () => {
         expect(tennis([5, 6])).toBe('Player Two is at Advantage');
     }); 
+    test("Player 2 is at Advantage", () => {
+        expect(tennis([1, 1])).toBe('15 - All');
+    }); 
+    test("Player 2 is at Advantage", () => {
+        expect(tennis([2, 3])).toBe('30 - 40');
+    }); 
 
 });
