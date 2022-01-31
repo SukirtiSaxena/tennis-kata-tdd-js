@@ -1,0 +1,14 @@
+{
+  "name": "js_tennis_kata",
+  "version": "1.0.0",
+  "description": "Tennis Kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "eslint": "eslint ./"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^25.2.4"
+  }
+}
